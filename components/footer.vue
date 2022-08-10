@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-800 text-white text-center font-semibold p-3 lg:flex ">
+    <div class="bg-gray-800 text-white text-center font-semibold p-3 lg:flex items-center gap-2 justify-between">
         <div class="">
             Copyright @2020 Dr Anju Choudhary.
         </div>
