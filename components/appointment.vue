@@ -21,7 +21,7 @@
           <div class="inline-flex rounded-md shadow p-1">
             <input
               type="text"
-              placeholder="Name"
+              placeholder="Name" v-model="a.name"
               class="
                 px-5
                 py-3
@@ -36,7 +36,7 @@
 
           <div class="inline-flex rounded-md shadow p-1">
             <input
-              type="number"
+              type="number" v-model="a.number"
               placeholder="+91-Mobile Number"
               class="
                 px-5
@@ -52,7 +52,7 @@
 
           <div class="inline-flex rounded-md shadow p-1">
             <input
-              type="date"
+              type="date" v-model="a.date"
               class="
                 px-5
                 py-3
@@ -111,13 +111,55 @@
 export default {
     data() {
         return {
+          a : {
+            name : '',
+            number : '',
+            date : '',
+          },
         sent: false,
         msg: 'It has been booked.',
         }
     },
     methods: {
-        book() {
-        this.sent = true
+        async book() {
+          this.sent = true
+          this.msg = "Please wait."
+          let headersList = {
+          "Authorization": "Basic bWFsd2FyZW1hbnU6TWFudUBoYXJwZXIx",
+          "Content-Type": "application/json"
+          }
+
+          let bodyContent = JSON.stringify({
+            "operation": "insert",
+            "schema": "anju",
+            "table": "appointments",
+            "records": [
+                {
+                    "name": this.a.name,
+                    "mobile_no": this.a.number,
+                    "date": this.a.date
+                }                
+            ]
+        });
+
+          let response = await fetch("https://po-manu.harperdbcloud.com", { 
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+          });
+
+          let data = await response.json();
+          console.log(data.message);
+
+          if(data['message'] == "inserted 1 of 1 records"){
+            console.log(data)
+            this.sent = true
+            this.msg = 'It has been booked.'
+          }
+          else{
+            this.sent = true
+            this.msg = 'Error Occured. Please try again later.'
+          }                    
         },
     },
 }

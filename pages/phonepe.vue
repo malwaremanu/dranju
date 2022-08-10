@@ -16,6 +16,8 @@
 
         <center>
             <img src="~/assets/upi_phonepe.png" alt="" class="max-w-2/3"/>
-        </center>        
+        </center>     
+
+        <Megafooter />       
     </div>
 </template>
