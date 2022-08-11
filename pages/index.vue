@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="select-none min-h-screen">
     <Header />
     <br />
 
-    <div>
-      <div class="text-2xl font-semibold">Dr Anju Choudhary</div>
-      <img src="~/assets/dr_anju.jpeg" alt="" class="w-28 rounded-md" />
-    </div>
+    <Whoami />
 
+    <Quotes />
+
+    <Reviews />
   
     <Appointment />
 
@@ -20,8 +20,11 @@
 import Header from '../components/header.vue'
 import Appointment from '../components/appointment.vue'
 import Footer from '../components/footer.vue'
+import Whoami from '~/components/whoami.vue';
+import Reviews from '~/components/reviews.vue';
+
 export default {
   name: 'IndexPage',
-  components: { Header, Appointment, Footer },
+  components: { Header, Appointment, Footer, Whoami, Reviews },
 }
 </script>

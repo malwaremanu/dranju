@@ -1,42 +1,78 @@
 <template>
-  <div
-    class="
-      md:flex
-      items-center
-      justify-between
-      bg-gray-900
-      p-2
-      text-white
-    "
-  >
+  <div class="md:flex items-center justify-between bg-gray-900 p-2 text-white">
+    <div class="px-4 flex items-center gap-3">
+      <div>
+        <nuxt-link
+          to="/"
+          class="
+            flex
+            items-center
+            gap-2
+            rounded-full
+            px-3
+            py-2
+            border
+            hover:bg-gray-800 hover:shadow-lg
+            cursor-pointer
+          "
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            ></path>
+          </svg>
+          Home
+        </nuxt-link>
+      </div>
+      <div>
+        <nuxt-link
+          to="/appointment"
+          class="
+            flex
+            items-center
+            gap-2
+            rounded-full
+            px-3
+            py-2
+            border
+            hover:bg-gray-800 hover:shadow-lg
+            cursor-pointer
+          "
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+          Appointment
+        </nuxt-link>
+      </div>
+    </div>
+
     <div class="flex items-center gap-3 p-2">
-      <a href="https://wa.me/919799495295" class="p-2 border rounded-full bg-white">
-        <img
-          src="~/assets/whatsapp.png"
-          class="h-3"
-          alt=""
-        />
+      <a
+        href="https://wa.me/919799495295"
+        class="p-2 border rounded-full bg-white"
+      >
+        <img src="~/assets/whatsapp.png" class="h-3" alt="" />
       </a>
 
       <nuxt-link to="/paytm">
         <div class="p-2 border rounded-full bg-white">
-            <img
-              src="~/assets/paytm.png"
-              class="h-3"
-              alt=""
-            />
+          <img src="~/assets/paytm.png" class="h-3" alt="" />
         </div>
       </nuxt-link>
-      
+
       <nuxt-link to="/phonepe">
         <div class="p-2 border rounded-full bg-white">
-          <img
-            src="~/assets/phonepe.svg"
-            class="h-3"
-            alt=""
-          />
+          <img src="~/assets/phonepe.svg" class="h-3" alt="" />
         </div>
-      </nuxt-link>      
+      </nuxt-link>
 
       <a href="tel:919799594295" class="px-4 py-2 border rounded-full">
         <svg
@@ -53,55 +89,6 @@
             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
           ></path>
         </svg>
-      </a>
-    </div>
-
-    <div class="flex items-center gap-2 mr-3 p-2">
-      <a href="https://wa.me/919799495295" class="flex items-center gap-2 px-2 py-1 border rounded-full">
-        <div>
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-        </div>
-
-        <div class="pr-2">
-          <div>Online Only</div>
-          <div class="text-xs uppercase">BY Appointments</div>
-        </div>
-      </a>
-
-      <a href="tel:919799594295" class="flex items-center gap-2 px-2 py-1 border rounded-full">
-        <div>
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"
-            ></path>
-          </svg>
-        </div>
-        <div class="pr-2">
-          <div>Call Now</div>
-          <div class="text-xs uppercase">+91-9799495295</div>
-        </div>
       </a>
     </div>
   </div>
