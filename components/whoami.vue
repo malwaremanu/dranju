@@ -11,7 +11,7 @@
           I can help you in Psychotherapy and Mental health.
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center gap-2 p-2 mt-2">
+        <div class="flex flex-col lg:flex-row items-center text-left gap-2 p-2 mt-2">
           <a
             href="https://wa.me/919799495295"
             class="

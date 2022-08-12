@@ -15,7 +15,7 @@
           class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
         >
           <span class="block">Need Appointment ?</span>
-          <span class="block text-green-400">Book it now</span>
+          <span class="block text-green-400">Book it now {{ today }} </span>
         </h2>
         <div class="mt-8 md:flex lg:mt-0 lg:flex-shrink-0 gap-3">
           <div class="inline-flex rounded-md shadow p-1">
@@ -53,6 +53,7 @@
           <div class="inline-flex rounded-md shadow p-1">
             <input
               type="date" v-model="a.date"
+              :min="today"
               class="
                 px-5
                 py-3
@@ -116,6 +117,7 @@ export default {
             number : '',
             date : '',
           },
+          today : new Date().toISOString().split('T')[0],
         sent: false,
         msg: 'It has been booked.',
         }

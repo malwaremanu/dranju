@@ -12,9 +12,9 @@
           @click="kam"
           class="
             flex-none
-            hover:bg-green-400
+            hover:bg-gray-900
             bg-gray-200
-            hover:text-gray-900
+            hover:text-white
             rounded-full
             p-1
             cursor-pointer
@@ -40,9 +40,9 @@
           @click="jyada"
           class="
             flex-none
-            hover:bg-green-400
+            hover:bg-gray-900
             bg-gray-200
-            hover:text-gray-900
+            hover:text-white
             rounded-full
             p-1
             cursor-pointer
