@@ -15,7 +15,7 @@
           class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
         >
           <span class="block">Need Appointment ?</span>
-          <span class="block text-green-400">Book it now {{ today }} </span>
+          <span class="block text-green-400">Book it now </span>
         </h2>
         <div class="mt-8 md:flex lg:mt-0 lg:flex-shrink-0 gap-3">
           <div class="inline-flex rounded-md shadow p-1">

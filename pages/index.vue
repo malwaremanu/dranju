@@ -5,26 +5,18 @@
 
     <Whoami />
 
-    <Quotes />
-
-    <Reviews />
-  
-    <Appointment />
-
-    <Footer />
+    <Megafooter />
 
   </div>
 </template>
 
 <script>
 import Header from '../components/header.vue'
-import Appointment from '../components/appointment.vue'
-import Footer from '../components/footer.vue'
 import Whoami from '~/components/whoami.vue';
-import Reviews from '~/components/reviews.vue';
+import Megafooter from '~/components/megafooter.vue';
 
 export default {
   name: 'IndexPage',
-  components: { Header, Appointment, Footer, Whoami, Reviews },
+  components: { Header, Whoami, Megafooter },
 }
 </script>

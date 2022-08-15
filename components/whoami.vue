@@ -8,7 +8,7 @@
         <div class="text-4xl font-semibold">Dr. Anju Choudhary</div>
 
         <div class="text-sm font-semibold text-gray-500">
-          I can help you in Psychotherapy and Mental health.
+          RCI Registered Psychologist <br> M.Sc. Ph.D. in Marital Issues & Relationship Counselling
         </div>
 
         <div class="flex flex-col lg:flex-row items-center text-left gap-2 p-2 mt-2">
