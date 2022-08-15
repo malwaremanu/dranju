@@ -99,6 +99,7 @@
         :key="p"
         class="
           border
+          hover:border-gray-400
           px-6
           py-3
           rounded-xl
