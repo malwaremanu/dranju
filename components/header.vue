@@ -74,7 +74,7 @@
         </div>
       </nuxt-link>
 
-      <a href="tel:919799594295" class="px-4 py-2 border rounded-full">
+      <a href="tel:919799495295" class="px-4 py-2 border rounded-full">
         <svg
           class="w-4 h-4"
           fill="none"
